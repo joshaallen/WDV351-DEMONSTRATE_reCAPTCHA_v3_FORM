@@ -105,6 +105,7 @@
       <tbody><tr><td><?php echo $tableData[0];?></td><td><?php echo $tableData[1];?></td><td><?php echo $tableData[2];?></td><td><?php echo $tableData[3];?></td></tr></tbody>
     </table>
   <?php 
+    header( "refresh:10; url=reCAPTCHAv3.php" );
   } 
   ?>
   </main>
