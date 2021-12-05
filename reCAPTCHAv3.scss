@@ -1,0 +1,139 @@
+//resets
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100%;
+  font: 1.8rem Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  
+}
+//layouts
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  flex: 0 1 auto;
+  padding: 3rem 0;
+  border-bottom: 3px solid #000000;
+  background: linear-gradient(to right, rgba(62, 73, 62, 0), rgba(62, 73, 62, 1));
+}
+
+main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 30rem;
+  margin: 0 auto;
+}
+
+form {
+  flex: 0 1 30rem;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+  height: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+form >* {
+  flex: 1 1 100%;
+}
+
+div.vertical--center div:nth-of-type(1) {
+  margin-bottom: 8rem;
+}
+input[type=email], label {
+  padding: 1.2rem;
+}
+label {
+  font-size: 2.4rem;
+}
+input[type=email] {
+  cursor: pointer;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+ 
+}
+.success-message {
+  color: #008000;
+}
+.error-message {
+  color: #FF0000;
+}
+button, input[type=email], input[type=reset] {
+  font: inherit;
+}
+div.vertical--center {
+  align-self: center;
+}
+button.g-recaptcha, input[type=reset] {
+  display: block;
+  justify-self: start;
+  align-self: end;
+  flex: 0 1 10.8rem;
+  padding: 1.2rem 2.4rem;
+  border: 3px solid rgba($color: #000000, $alpha: 1);
+  border-radius: 1.3rem;
+  background: rgba($color: #000000, $alpha: 0.1);
+  color: #494949;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  transition: .3s border-color;
+}
+
+input[type=reset] {
+  justify-self: end;
+  align-self: end;
+  margin-left: auto;
+}
+
+input[type=email]:focus {
+  background-color: rgba($color: #000000, $alpha: 0.1);
+  outline: none;
+}
+
+input[type=reset]:hover, button.g-recaptcha:hover {
+  border: 3px solid rgba($color: #000000, $alpha: 0.2);
+}
+footer {
+  flex: 0 1 auto;
+  padding: 3rem 0;
+  border-top: 3px solid #000000;
+  background: linear-gradient(to right, rgba(62, 73, 62, 0), rgba(62, 73, 62, 1));
+}
+table, th, td, thead {
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid black;
+}
+table {
+  width: 15%;
+  table-layout: auto;
+}
+caption {
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding: 0.5rem 0;
+}
+th {
+  padding:1rem 0.75rem;
+}
+tbody tr {
+  background-color: rgba(62, 73, 62, 1);
+  color: #FFFFFF;
+}
